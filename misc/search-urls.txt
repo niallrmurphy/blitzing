@@ -1,0 +1,6 @@
+Nimble Fingers,https://nimblefingers.ie,https://nimblefingers.ie/pages/search-results-page?q=test,toys
+The Toy Shop Online,https://www.thetoyshoponline.ie,https://www.thetoyshoponline.ie/?s=test,toys
+Jiminy Eco Toys,https://jiminy.ie,https://jiminy.ie/search?q=test&currencies=EUR,toys
+World of Wonder Toys,https://worldofwondertoys.ie,https://worldofwondertoys.ie/?s=doll&post_type=product&type_aws=true&aws_id=1&aws_filter=1,toys
+Smyths Toys,https://www.smythstoys.com,https://www.smythstoys.com/ie/en-ie/search/?text=test,toys
+
