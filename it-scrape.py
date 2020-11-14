@@ -39,7 +39,6 @@ for x in tree.xpath('//*[@id="content_left"]/article/div/section/div/p'):
     description = line[1]
     url = line[2].replace('%20', '')
 
-
     c.execute("INSERT INTO searchDestinations(name, description, mainURL) VALUES (?, ?, ?)",
         (sitename, description, url))
 
