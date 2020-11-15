@@ -75,13 +75,14 @@ body{
   <script src="https://kit.fontawesome.com/27e7b15b49.js" crossorigin="anonymous"></script>
 
   <center><h1>Irish Retail Online Search Engine</h1>
-    <small>(&copy; Niall Richard Murphy <a href="mailto:niallm@gmail.com">Gmail</a>,
+    <h3>Searches the <a href="https://www.irishtimes.com/news/consumer/400-yes-400-irish-retailers-for-all-your-online-christmas-shopping-1.4386351">400 Irish retail websites</a> identified by <a href="http://www.irishtimes.com/">the Irish Times.</a></h3>
+    <small>(&copy; Niall Richard Murphy: <a href="mailto:niallm@gmail.com">Gmail</a>,
       <a href="https://twitter.com/niallm">@niallm</a>)</small></center>
 
   <div class="wrap">
      <div class="search">
        <label for="subset-select"></label>
-
+       <!-- For later implementation -->
        <!-- <select name="subset" id="subset-select" class="searchSubset" form="form1">
          <option value="everything">All Irish Retail Sites</option>
          <option value="toys">Toys</option>
@@ -94,7 +95,6 @@ body{
          <option value="health-and-beauty">Health and Beauty</option>
          <option value="misc">Everything Else</option>
        </select> -->
-
        <input type="text" class="searchTerm" placeholder="What are you looking for?" form="form1" name=searchquery>
         <button type="submit" class="searchButton" name="search" form="form1">
           <i class="fa fa-search"></i>
@@ -108,7 +108,7 @@ body{
          <input type="radio" name="engineChoice" id="google" value="Google" form="form1"/>
          <label for="never">Google</label>.
        </i>
-    <form action="http://www.internethistory.ie/info37.php" method="get" id="form1">
+    <form action="/search.php" method="get" id="form1">
      </form>
      </div>
   </div>
