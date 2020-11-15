@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchSubset {
+  width: 34%;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  font-weight: bold;
+}
+
+.results {
+  text-align: center;
+  font-size: small;
+  padding: 10px;
+  background: -webkit-linear-gradient(#1ba0d7, #002d3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
+</head>
+<body>
+  <script src="https://kit.fontawesome.com/27e7b15b49.js" crossorigin="anonymous"></script>
+
+  <center><h1>Irish Retail Online Search Engine</h1>
+    <small>(&copy; Niall Richard Murphy <a href="mailto:niallm@gmail.com">Gmail</a>,
+      <a href="https://twitter.com/niallm">@niallm</a>)</small></center>
+
+  <div class="wrap">
+     <div class="search">
+       <label for="subset-select"></label>
+
+       <!-- <select name="subset" id="subset-select" class="searchSubset" form="form1">
+         <option value="everything">All Irish Retail Sites</option>
+         <option value="toys">Toys</option>
+         <option value="food-and-drink">Food and Drink</option>
+         <option value="art-and-gifts">Art and Gifts</option>
+         <option value="clothes">Clothes</option>
+         <option value="books">Books</option>
+         <option value="music-and-tech">Music and Tech</option>
+         <option value="sporty-stuff">Sporty Stuff</option>
+         <option value="health-and-beauty">Health and Beauty</option>
+         <option value="misc">Everything Else</option>
+       </select> -->
+
+       <input type="text" class="searchTerm" placeholder="What are you looking for?" form="form1" name=searchquery>
+        <button type="submit" class="searchButton" form="form1">
+          <i class="fa fa-search"></i>
+       </button>
+
+     </div>
+     <div class="results">
+       <i>Search results delivered via
+         <input type="radio" name="engineChoice" id="bing" value="Bing" form="form1" checked/>
+         <label for="always">Bing</label>
+         <input type="radio" name="engineChoice" id="google" value="Google" form="form1"/>
+         <label for="never">Google</label>.
+       </i>
+    <form action="http://www.internethistory.ie/info37.php" method="get" id="form1">
+     </form>
+     </div>
+  </div>
+</body>
+</html>
