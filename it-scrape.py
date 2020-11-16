@@ -30,17 +30,20 @@ tree = html.fromstring(page.content)
 for x in tree.xpath('//*[@id="content_left"]/article/div/section/div/p'):
     para = (html.tostring(x))
     site_details = re.findall(pattern, str(para))
-    
+
     if len(site_details) == 0:
         continue
-        
+
     line = list(filter(None, site_details[0]))
-    sitename = line[0].replace('%20', '')
-    description = line[1]
-    url = line[2].replace('%20', '')
+    url = line[0].replace('%20', '')
+    sitename = line[1]
+    description = line[2].replace('%20', '')
 
     c.execute("INSERT INTO searchDestinations(name, description, mainURL) VALUES (?, ?, ?)",
         (sitename, description, url))
+
+    # For concatenating into a text file for custom search engine upload
+    print (url)
 
 # Save (commit) the changes, and close.
 conn.commit()
